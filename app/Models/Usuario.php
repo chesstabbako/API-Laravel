@@ -17,16 +17,16 @@ class Usuario extends Model
     /**
      * Get the colas for cola.
      */
-    public function colas()
+    public function cola()
     {
-        return $this->hasMany(Cola::class);
+        return $this->belongsTo(Cola::class);
     }
 
     /**
      * Get the users for atenciones.
      */
-    public function atenciones()
+    public function atencion()
     {
-        return $this->hasMany(Atencione::class);
+        return $this->belongsTo(Atencione::class);
     }
 }
