@@ -75,7 +75,7 @@ class UsuarioController extends Controller
         $information= $request->all();
         $user= Usuario::findOrFail($usuario->id);
         if($user){
-            $user->update($information);
+            return $user->update($information);
         }else{
             return "$usuario->name No pudo ser eliminado";
         }
