@@ -6,6 +6,7 @@ Puede insertar en su base de datos el archivo llamado 'usuarios.sql' para comenz
 4.- Para correr la API debe ejecutar 'php artisan serve'.
 5.- Cualquier App puede consumir de esta API, pues así está configurado.
 6.- Esta API está siendo consumida por una App existente en mi repositorio llamada React-App.
+7. Cualquier usuario eliminado de la tabla quedará existiendo en la misma ya que se hace uso del método softDelete.
 
 Cualquier duda escribir a mi cuenta Twitter: tabbaking
 
